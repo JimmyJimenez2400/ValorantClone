@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid blue; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+  font-size: 16px;
+}
+
+body>* {
+  flex: 1;
+}
+
+.navbarContainer {
+  width: 100%;
+  background-color: black;
+
+  flex: 0 1 5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(51, 51, 51, .25);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 95%;
+
+  padding: 20px 0px;
+}
+
+.logo {
+  flex: 0 1 10%;
+}
+
+.links {
+  flex: 1;
+}
+
+.playButton {
+  text-align: center;
+  flex: 0 1 10%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list {
+  display: flex;
+  gap: 5px;
+}
+
+.numList {
+  font-weight: bolder;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  align-items: center;
+
+  flex: 1;
+}
+
+.introduceAgents,
+.introductionMaps,
+.introduceArsenal {
+  flex: 1;
+}
+
+.mainSubSection {
+  width: 80%;
+}
+
+.introductionVideo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valVideo {
+  position: absolute;
+  object-fit: cover;
+
+  height: 100%;
+  width: 100%;
+}
+
+.middleTextOfVideo {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.topContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  gap: 60px;
+}
+
+.top {
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+
+.mid {
+  font-size: 1.5em;
+}
+
+.playNowBtn {
+
+  outline: 2px solid white;
+  outline-offset: 4px;
+  width: 230px;
+  height: 50px;
+  cursor: pointer;
+
+  background-color: red;
+  color: white;
+
+  font-weight: 400;
+  font-size: 1.2em;
+  border: none;
+  padding: 13px 24px;
+}
+
+
+.introduceAgents {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+#footerContainer {
+  flex: 0 1 10%;
+}
